@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="学习;教程;," />
+  <meta name="keywords" content="编码; 跨平台; C;," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="谷歌:搜索引擎使用方式：使用关键字搜索你想要的内容，全球最强大的搜索引擎 GitHub:代码托管使用方式：通过查询别人的issues解决在使用开源项目中无法解决的问题，fork项目clone源码看开源项目，学习项目思想 StackOverFlow:问答社区使用方式：在遇到上面两种方式无法解决的问题，可以在社区提问，或搜索社区已有的问答 bilibili:国内教程使用方式：youtube上优质教程会">
-<meta name="keywords" content="学习;教程;">
+<meta name="description" content="最近在做QEMU接口的时候，遇到一个中文乱码问题。在读取网卡名字的时候，中文显示为锟斤拷are。 可能也是自己对于C语言不是很熟悉，没有做过什么拿得出手的东西。 起因：Linux 在调用的时候使用UTF-8读会乱码，用GBK读会出现锟斤拷。Windows 端也显示乱码。 初步判断：Windows 端查询的内容在转换的时候丢失了。 紧接着就去查询转换的地方，发现C语言有宽字节和多字节。 WideCh">
+<meta name="keywords" content="编码; 跨平台; C;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="常用站点">
-<meta property="og:url" content="https://blog.guclan.com/2018/08/14/常用站点/index.html">
+<meta property="og:title" content="跨平台C语言编码">
+<meta property="og:url" content="https://blog.guclan.com/2018/08/16/跨平台C语言编码/index.html">
 <meta property="og:site_name" content="梦天小站">
-<meta property="og:description" content="谷歌:搜索引擎使用方式：使用关键字搜索你想要的内容，全球最强大的搜索引擎 GitHub:代码托管使用方式：通过查询别人的issues解决在使用开源项目中无法解决的问题，fork项目clone源码看开源项目，学习项目思想 StackOverFlow:问答社区使用方式：在遇到上面两种方式无法解决的问题，可以在社区提问，或搜索社区已有的问答 bilibili:国内教程使用方式：youtube上优质教程会">
+<meta property="og:description" content="最近在做QEMU接口的时候，遇到一个中文乱码问题。在读取网卡名字的时候，中文显示为锟斤拷are。 可能也是自己对于C语言不是很熟悉，没有做过什么拿得出手的东西。 起因：Linux 在调用的时候使用UTF-8读会乱码，用GBK读会出现锟斤拷。Windows 端也显示乱码。 初步判断：Windows 端查询的内容在转换的时候丢失了。 紧接着就去查询转换的地方，发现C语言有宽字节和多字节。 WideCh">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-16T09:11:49.930Z">
+<meta property="og:updated_time" content="2018-08-16T10:10:30.036Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="常用站点">
-<meta name="twitter:description" content="谷歌:搜索引擎使用方式：使用关键字搜索你想要的内容，全球最强大的搜索引擎 GitHub:代码托管使用方式：通过查询别人的issues解决在使用开源项目中无法解决的问题，fork项目clone源码看开源项目，学习项目思想 StackOverFlow:问答社区使用方式：在遇到上面两种方式无法解决的问题，可以在社区提问，或搜索社区已有的问答 bilibili:国内教程使用方式：youtube上优质教程会">
+<meta name="twitter:title" content="跨平台C语言编码">
+<meta name="twitter:description" content="最近在做QEMU接口的时候，遇到一个中文乱码问题。在读取网卡名字的时候，中文显示为锟斤拷are。 可能也是自己对于C语言不是很熟悉，没有做过什么拿得出手的东西。 起因：Linux 在调用的时候使用UTF-8读会乱码，用GBK读会出现锟斤拷。Windows 端也显示乱码。 初步判断：Windows 端查询的内容在转换的时候丢失了。 紧接着就去查询转换的地方，发现C语言有宽字节和多字节。 WideCh">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://blog.guclan.com/2018/08/14/常用站点/"/>
+  <link rel="canonical" href="https://blog.guclan.com/2018/08/16/跨平台C语言编码/"/>
 
 
 
 
 
-  <title>常用站点 | 梦天小站</title>
+  <title>跨平台C语言编码 | 梦天小站</title>
   
 
 
@@ -263,7 +263,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.guclan.com/2018/08/14/常用站点/">
+    <link itemprop="mainEntityOfPage" href="https://blog.guclan.com/2018/08/16/跨平台C语言编码/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="梦天">
@@ -280,7 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">常用站点</h1>
+          <h1 class="post-title" itemprop="name headline">跨平台C语言编码</h1>
         
 
         <div class="post-meta">
@@ -292,8 +292,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-14T16:23:02+08:00">
-                2018-08-14
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-16T17:10:11+08:00">
+                2018-08-16
               </time>
             
 
@@ -315,8 +315,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/综合/" itemprop="url" rel="index">
-                    <span itemprop="name">综合</span>
+                  <a href="/categories/编程问题/" itemprop="url" rel="index">
+                    <span itemprop="name">编程问题</span>
                   </a>
                 </span>
 
@@ -352,12 +352,30 @@
       
 
       
-        <p><a href="https://www.google.com" target="_blank" rel="noopener">谷歌:搜索引擎</a><br>使用方式：使用关键字搜索你想要的内容，全球最强大的搜索引擎</p>
-<p><a href="https://www.github.com" target="_blank" rel="noopener">GitHub:代码托管</a><br>使用方式：通过查询别人的issues解决在使用开源项目中无法解决的问题，fork项目clone源码看开源项目，学习项目思想</p>
-<p><a href="https://www.stackoverflow.com" target="_blank" rel="noopener">StackOverFlow:问答社区</a><br>使用方式：在遇到上面两种方式无法解决的问题，可以在社区提问，或搜索社区已有的问答</p>
-<p><a href="https://www.bilibili.com" target="_blank" rel="noopener">bilibili:国内教程</a><br>使用方式：youtube上优质教程会被搬运到这里，可以搜索你想看的视频课程</p>
-<p><a href="https://www.youtube.com" target="_blank" rel="noopener">youtube:国外教程</a><br>使用方式：可以看全世界的优质课程，但基本上只有英文版，可以转换中文字幕观看</p>
-<p>相信使用了以上的站点，会使代码水平更进一步</p>
+        <p>最近在做QEMU接口的时候，遇到一个中文乱码问题。<br>在读取网卡名字的时候，中文显示为锟斤拷are。</p>
+<p>可能也是自己对于C语言不是很熟悉，没有做过什么拿得出手的东西。</p>
+<p>起因：<br>Linux 在调用的时候使用UTF-8读会乱码，用GBK读会出现锟斤拷。<br>Windows 端也显示乱码。</p>
+<p>初步判断：<br>Windows 端查询的内容在转换的时候丢失了。</p>
+<p>紧接着就去查询转换的地方，发现C语言有宽字节和多字节。</p>
+<p>WideCharToMultiByte 函数调用。给指针分配内存空间的时候，少分配了一半的内存，改好之后，Windows一切正常。</p>
+<p>此时满心欢喜的用Linux端调用尝试，本以为大功告成。<br>结果锟斤拷变成了双持的。。。</p>
+<p>锟斤拷太锟斤拷 （以太网）</p>
+<p>就这样，以太网变成了神器锟斤拷。</p>
+<p>有诗云：<br>手持两把锟斤拷，口中疾呼烫烫烫。<br>脚踏千朵屯屯屯，笑看万物锘锘锘。</p>
+<p>在现在这个时候能遇到如此神器已经是很难得了，所以又进行了下一步的研究。</p>
+<p>查询的时候查询到的是宽字节，也就是Unicode。但是转出来UTF-8接收的是几个问号，GBK接收的是锟斤拷。</p>
+<p>所以这里面一定有问题。</p>
+<p>然后就想，能不能把查出来的GBK，转成UTF-8乱码传出来，Linux读取之后再转回GBK。</p>
+<p>尝试一番，发现没读出来，可能是代码写的有问题。</p>
+<p>于是就转换了思路，为什么要转换成GBK而不是直接转换成UTF-8呢。</p>
+<p>查阅了<a href="https://docs.microsoft.com/en-us/windows/desktop/api/stringapiset/nf-stringapiset-widechartomultibyte" target="_blank" rel="noopener">官方文档</a></p>
+<p>发现，在转换格式的时候可以指定Windows的ANSI和UTF-8。原来是之前的人写的代码有问题，没有考虑跨平台兼容性。</p>
+<p>于是进行了转码，将Unicode直接转换为UTF-8。</p>
+<p>至此已经过去了一周的时间。</p>
+<p>一周的时间对于开发来讲时间挺长了，但是经历过这个坑，下一个坑就容易多了。</p>
+<p>总结的经验：</p>
+<p>在解决问题的时候，尽量去溯源，不要在中间过程中下太多功夫，一般都是出口或者入口上出问题就几率比较大。</p>
+<p>这次就是钻了牛角尖，妄想着在Linux和Windows通信的时候把编码转换正常，浪费了这么多时间。</p>
 
       
     </div>
@@ -375,7 +393,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/学习-教程/" rel="tag"># 学习;教程;</a>
+            <a href="/tags/编码-跨平台-C/" rel="tag"># 编码; 跨平台; C;</a>
           
         </div>
       
@@ -388,15 +406,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/08/15/开启bbr服务/" rel="next" title="开启bbr服务">
+                <i class="fa fa-chevron-left"></i> 开启bbr服务
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/08/15/开启bbr服务/" rel="prev" title="开启bbr服务">
-                开启bbr服务 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
