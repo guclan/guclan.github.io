@@ -748,7 +748,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/08/16/跨平台C语言编码/" itemprop="url">跨平台C语言编码</a></h1>
+                <a class="post-title-link" href="/2018/08/16/跨平台C语言编码/" itemprop="url">跨平台跨语言编码</a></h1>
         
 
         <div class="post-meta">
@@ -824,28 +824,45 @@
           
             <p>最近在做QEMU接口的时候，遇到一个中文乱码问题。<br>在读取网卡名字的时候，中文显示为锟斤拷are。</p>
 <p>可能也是自己对于C语言不是很熟悉，没有做过什么拿得出手的东西。</p>
-<p>起因：<br>Linux 在调用的时候使用UTF-8读会乱码，用GBK读会出现锟斤拷。<br>Windows 端也显示乱码。</p>
-<p>初步判断：<br>Windows 端查询的内容在转换的时候丢失了。</p>
+<p>现象：<br>Linux 在调用的时候使用UTF-8读会乱码，用GBK读会出现锟斤拷。<br>Windows 端也显示乱码。</p>
+<p>初步判断：<br>Windows 端查询的内容在转换的时候转换失败或丢失了。</p>
 <p>紧接着就去查询转换的地方，发现C语言有宽字节和多字节。</p>
 <p>WideCharToMultiByte 函数调用。给指针分配内存空间的时候，少分配了一半的内存，改好之后，Windows一切正常。</p>
-<p>此时满心欢喜的用Linux端调用尝试，本以为大功告成。<br>结果锟斤拷变成了双持的。。。</p>
-<p>锟斤拷太锟斤拷 （以太网）</p>
-<p>就这样，以太网变成了神器锟斤拷。</p>
+<p>此时满心欢喜的用Linux端调用尝试，本以为大功告成。</p>
+<p>结果锟斤拷变成了双持的。。。锟斤拷太锟斤拷 （以太网）</p>
 <p>有诗云：<br>手持两把锟斤拷，口中疾呼烫烫烫。<br>脚踏千朵屯屯屯，笑看万物锘锘锘。</p>
 <p>在现在这个时候能遇到如此神器已经是很难得了，所以又进行了下一步的研究。</p>
-<p>查询的时候查询到的是宽字节，也就是Unicode。但是转出来UTF-8接收的是几个问号，GBK接收的是锟斤拷。</p>
+<p>查询的时候查询到的是宽字节，也就是Unicode。但是在Linux终端xshell编码UTF-8接收的是几个问号，GBK接收的是锟斤拷。</p>
 <p>所以这里面一定有问题。</p>
 <p>然后就想，能不能把查出来的GBK，转成UTF-8乱码传出来，Linux读取之后再转回GBK。</p>
 <p>尝试一番，发现没读出来，可能是代码写的有问题。</p>
 <p>于是就转换了思路，为什么要转换成GBK而不是直接转换成UTF-8呢。</p>
 <p>查阅了<a href="https://docs.microsoft.com/en-us/windows/desktop/api/stringapiset/nf-stringapiset-widechartomultibyte" target="_blank" rel="noopener">官方文档</a></p>
-<p>发现，在转换格式的时候可以指定Windows的ANSI和UTF-8。原来是之前的人写的代码有问题，没有考虑跨平台兼容性。</p>
+<p>发现，在WideCharToMultiByte 转换格式的时候可以指定Windows的ANSI和UTF-8。原来是之前的人写的代码有问题，没有考虑跨平台兼容性。</p>
 <p>于是进行了转码，将Unicode直接转换为UTF-8。</p>
+<p>再次使用Linux终端编码UTF-8接收，一切正常。</p>
 <p>至此已经过去了一周的时间。</p>
-<p>一周的时间对于开发来讲时间挺长了，但是经历过这个坑，下一个坑就容易多了。</p>
+<p>由于是上层平台需要使用此值，所以使用python代码接收，但是python2的代码中默认编码是ASCII，所以：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import sys</span><br><span class="line">reload(sys) #这一句是因为python2.5以后不支持setdefaultencoding方法，需要重新载入模块才可以使用</span><br><span class="line">sys.setdefaultencoding(&quot;utf-8&quot;)</span><br></pre></td></tr></table></figure>
+<p>但是使用了utf-8发现还是有问题。</p>
+<p>发现向Java代码传递后值为\uXXXX类的值，这不是Unicode的编码吗。为什么不是中文？</p>
+<p>于是看了一下接收的地方代码，接收的json数据，但使用eval去转换str类型变成dict。</p>
+<p>在查阅了一番资料后，得知一个结论： 不要使用eval，eval会直接进行转换，而且之前听说eval是一个不安全的操作，所以尽量使用json包去转换类型。</p>
+<p>改为json转换类型，发现结果还是不对，但是执行print去打印此值就是正确的值。</p>
+<p>此时判断，从python到Java之间的转换层出了问题，于是一点点排查坑。</p>
+<p>最终发现在一个不起眼的地方，在代码中间部分被引入了json包，而没有在头中引入。</p>
+<p>前人挖坑，后人遭罪啊。。。</p>
+<p>于是检查json转换逻辑，发现json.dumps 序列化时对中文默认使用的ascii编码。</p>
+<p>想输出真正的中文需要指定ensure_ascii=False。</p>
+<p>测试后一切正常。</p>
+<p>又过去了一周的时间。。。。</p>
+<p>两周的时间对于开发来讲时间挺长的，但是经历过这个坑，下一个坑就容易多了。</p>
 <p>总结的经验：</p>
-<p>在解决问题的时候，尽量去溯源，不要在中间过程中下太多功夫，一般都是出口或者入口上出问题就几率比较大。</p>
+<p>在解决问题的时候，尽量去溯源，不要在中间过程中下太多功夫，一般都是代码出口或者入口上出问题的几率比较大。</p>
 <p>这次就是钻了牛角尖，妄想着在Linux和Windows通信的时候把编码转换正常，浪费了这么多时间。</p>
+<p>呼吁大家编码的时候遵循编码规范。</p>
+<p>建议参考的编码格式：</p>
+<p>Java：阿里巴巴Java开发手册<br>Python：PEP8规范/Google代码规范<br>C：Google代码规范</p>
 
           
         
@@ -1242,7 +1259,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
