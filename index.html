@@ -362,22 +362,20 @@
       
         
           
-            <h1 id="Git的安装"><a href="#Git的安装" class="headerlink" title="Git的安装"></a>Git的安装</h1><ul>
-<li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git官网</a></li>
-<li><a href="https://tortoisegit.org/" target="_blank" rel="noopener">TortoiseGit官网</a></li>
-</ul>
-<h2 id="Git介绍"><a href="#Git介绍" class="headerlink" title="Git介绍"></a>Git介绍</h2><p>Git是一个开源的工具，用来做版本控制，但由于是开源，没有像SVN那样严格的权限管理，所以在企业项目中使用的时候需要谨慎操作或在Git服务器上做权限控制。</p>
-<p>TortoiseGit是一个图形化的Git客户端工具包，它可以进行Git绝大多数的操作，大大减少了使用工具的学习成本。</p>
-<h2 id="准备阶段"><a href="#准备阶段" class="headerlink" title="准备阶段"></a>准备阶段</h2><p>从Git官网下载好安装包，TortoiseGit官网下载安装包以及对应的语言包。共计3个安装包。</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>双击git安装包安装即可</p>
-<p>参数如下：</p>
-<p>默认勾选了Git GUI Here，也可使用默认选项，Git的GUI界面不是很灵活，建议显示bash就可以<br><img src="/images/2.png" alt="安装Git"><br>选择Git使用的编辑器，建议使用Vim作为编辑器，这样可以使用git bash 直接调用，一般不会使用此功能，所以无所谓<br><img src="/images/3.png" alt="安装Git"><br>默认选项即可，这里是指定可以在哪调用git的命令<br><img src="/images/4.png" alt="安装Git"><br>默认选择OpenSSL即可，这里是选择git通信加密方式<br><img src="/images/5.png" alt="安装Git"><br>如果你克隆的代码会从本地复制到Linux中建议选择第二个，否则默认即可，建议选择第二个<br><img src="/images/6.png" alt="安装Git"><br>默认选项即可，这里是默认控制台窗口<br><img src="/images/7.png" alt="安装Git"><br>默认选项即可，点击install进行安装<br><img src="/images/8.png" alt="安装Git"></p>
-<h3 id="安装TortoiseGit"><a href="#安装TortoiseGit" class="headerlink" title="安装TortoiseGit"></a>安装TortoiseGit</h3><p>Git工具安装后，要开始安装TortoiseGit</p>
-<p>安装过程这里会省略部分基础步骤</p>
-<p>这里的选项选择OpenSSH，一定要选择OpenSSH，不然你的密钥无法在TortoiseGit中直接使用，而是需要进行转换<br><img src="/images/10.png" alt="安装TortoiseGit"><br>默认选项即可<br><img src="/images/11.png" alt="安装TortoiseGit"><br>安装完成时默认勾选了第一次的初始化设置，此时进入设置向导不要进行任何操作<br><img src="/images/12.png" alt="安装TortoiseGit"><br>在向导开启状态安装中文pack<br><img src="/images/13.png" alt="安装TortoiseGit"><br>安装后发现语言还是只有English，别慌，点击一下refresh<br><img src="/images/14.png" alt="安装TortoiseGit"><br>此时已经出现中文选项，点击选择，并点击下一步<br><img src="/images/15.png" alt="安装TortoiseGit"><br>Git路径选择你安装的Git程序的bin目录即可，如果Git是默认安装的，这里不用修改<br><img src="/images/16.png" alt="安装TortoiseGit"><br>名称和Email建议填写你在此计算机中提交最常用的名字和邮箱，如果是公司的gitlab建议填写gitlab分配的用户名和公司邮箱<br><img src="/images/17.png" alt="安装TortoiseGit"><br>SSH选项选择OpenSSH，这里一定要确认选择的是OpenSSH，点击完成即可开始使用<br><img src="/images/18.png" alt="安装TortoiseGit"></p>
-<p>由于git和TortoiseGit是免费的，建议一切安装包从官方网站下载。</p>
+          Git的安装
+Git官网
+TortoiseGit官网
 
-          
+Git介绍Git是一个开源的工具，用来做版本控制，但由于是开源，没有像SVN那样严格的权限管理，所以在企业项目中使用的时候需要谨慎操作或在Git服务器上做权限控制。
+TortoiseGit是一个图形化的Git客户端工具包，它可以进行Git绝大多
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/29/git及TortoiseGit的使用/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -517,23 +515,16 @@
       
         
           
-            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>你是否觉得自己从学校毕业的时候只做过小玩具一样的程序？走入职场后哪怕没有什么经验也可以把以下这些课外练习走一遍（朋友的抱怨：学校课程总是从理论出发，作业项目都看不出有什么实际作用，不如从工作中的需求出发）</p>
-<h2 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h2><p>不要乱买书，不要乱追新技术新名词，基础的东西经过很长时间积累而且还会在未来至少10年通用。回顾一下历史，看看历史上时间线上技术的发展，你才能明白明天会是什么样。一定要动手，例子不管多么简单，建议至少自己手敲一遍看看是否理解了里头的细枝末节。一定要学会思考，思考为什么要这样，而不是那样。还要举一反三地思考。<br>注：你也许会很奇怪为什么下面的东西很偏Unix/Linux，这是因为我觉得Windows下的编程可能会在未来很没有前途，原因如下：<br>现在的用户界面几乎被两个东西主宰了，1）Web，2）移动设备iOS或Android。Windows的图形界面不吃香了。越来越多的企业在用成本低性能高的Linux和各种开源技术来构架其系统，Windows的成本太高了。微软的东西变得太快了，很不持久，他们完全是在玩弄程序员。详情参见《Windows编程革命史》<br>所以，我个人认为以后的趋势是前端是Web+移动，后端是Linux+开源。开发这边基本上没Windows什么事。</p>
-<h2 id="启蒙入门"><a href="#启蒙入门" class="headerlink" title="启蒙入门"></a>启蒙入门</h2><h3 id="1、-学习一门脚本语言，例如Python-Ruby"><a href="#1、-学习一门脚本语言，例如Python-Ruby" class="headerlink" title="1、 学习一门脚本语言，例如Python/Ruby"></a>1、 学习一门脚本语言，例如Python/Ruby</h3><p>可以让你摆脱对底层语言的恐惧感，脚本语言可以让你很快开发出能用得上的小程序。实践项目:<br>处理文本文件，或者csv (关键词 python csv, python open, python sys) 读一个本地文件，逐行处理（例如 word count，或者处理log）遍历本地文件系统 (sys, os, path)，例如写一个程序统计一个目录下所有文件大小并按各种条件排序并保存结果跟数据库打交道 (python sqlite)，写一个小脚本统计数据库里条目数量学会用各种print之类简单粗暴的方式进行调试学会用Google (phrase, domain, use reader to follow tech blogs)<br>为什么要学脚本语言，因为他们实在是太方便了，很多时候我们需要写点小工具或是脚本来帮我们解决问题，你就会发现正规的编程语言太难用了。</p>
-<h3 id="2、-用熟一种程序员的编辑器-不是IDE-和一些基本工具"><a href="#2、-用熟一种程序员的编辑器-不是IDE-和一些基本工具" class="headerlink" title="2、 用熟一种程序员的编辑器(不是IDE) 和一些基本工具"></a>2、 用熟一种程序员的编辑器(不是IDE) 和一些基本工具</h3><p>Vim / Emacs / Notepad++，学会如何配置代码补全，外观，外部命令等。Source Insight (或 ctag)<br>使用这些东西不是为了Cool，而是这些编辑器在查看、修改代码/配置文章/日志会更快更有效率。</p>
-<h3 id="3、-熟悉Unix-Linux-Shell和常见的命令行"><a href="#3、-熟悉Unix-Linux-Shell和常见的命令行" class="headerlink" title="3、 熟悉Unix/Linux Shell和常见的命令行"></a>3、 熟悉Unix/Linux Shell和常见的命令行</h3><p>如果你用windows，至少学会用虚拟机里的linux， vmware player是免费的，装个Ubuntu吧一定要少用少用图形界面。学会使用man来查看帮助文件系统结构和基本操作 ls/chmod/chown/rm/find/ln/cat/mount/mkdir/tar/gzip …学会使用一些文本操作命令 sed/awk/grep/tail/less/more …学会使用一些管理命令 ps/top/lsof/netstat/kill/tcpdump/iptables/dd…了解/etc目录下的各种配置文章，学会查看/var/log下的系统日志，以及/proc下的系统运行信息了解正则表达式，使用正则表达式来查找文件。<br>对于程序员来说Unix/Linux比Windows简单多了。学会使用Unix/Linux你会发现图形界面在某些时候实在是太难用了，相当地相当地降低工作效率。</p>
-<h3 id="4、-学习Web基础（HTML-CSS-JS-服务器端技术-LAMP"><a href="#4、-学习Web基础（HTML-CSS-JS-服务器端技术-LAMP" class="headerlink" title="4、 学习Web基础（HTML/CSS/JS) + 服务器端技术 (LAMP)"></a>4、 学习Web基础（HTML/CSS/JS) + 服务器端技术 (LAMP)</h3><p>未来必然是Web的世界，学习WEB基础的最佳网站是W3School。<br>学习HTML基本语法学习CSS如何选中HTML元素并应用一些基本样式（关键词：box model）学会用 Firefox + Firebug 或 chrome 查看你觉得很炫的网页结构，并动态修改。学习使用Javascript操纵HTML元件。理解DOM和动态网页（<a href="http://oreilly.com/catalog/9780596527402" target="_blank" rel="noopener">http://oreilly.com/catalog/9780596527402</a>) 网上有免费的章节，足够用了。或参看 DOM 。学会用 Firefox + Firebug 或 chrome 调试Javascript代码（设置断点，查看变量，性能，控制台等）在一台机器上配置Apache 或 Nginx学习PHP，让后台PHP和前台HTML进行数据交互，对服务器相应浏览器请求形成初步认识。实现一个表单提交和反显的功能。把PHP连接本地或者远程数据库 MySQL（MySQL 和 SQL现学现用够了）跟完一个名校的网络编程课程（例如：<a href="http://www.stanford.edu/~ouster/cgi-bin/cs142-fall10/index.php" target="_blank" rel="noopener">http://www.stanford.edu/~ouster/cgi-bin/cs142-fall10/index.php</a> ) 不要觉得需要多于一学期时间，大学生是全职一学期选3-5门课，你业余时间一定可以跟上学习一个javascript库（例如jQuery 或 ExtJS）+ Ajax (异步读入一个服务器端图片或者数据库内容）+JSON数据格式。HTTP: The Definite Guide 读完前4章你就明白你每天上网用浏览器的时候发生的事情了(proxy, gateway, browsers)做个小网站（例如：一个小的留言板，支持用户登录，Cookie/Session，增、删、改、查，上传图片附件，分页显示）买个域名，租个空间，做个自己的网站。</p>
-<h2 id="进阶加深"><a href="#进阶加深" class="headerlink" title="进阶加深"></a>进阶加深</h2><h3 id="1、-C语言和操作系统调用"><a href="#1、-C语言和操作系统调用" class="headerlink" title="1、 C语言和操作系统调用"></a>1、 C语言和操作系统调用</h3><p>重新学C语言，理解指针和内存模型，用C语言实现一下各种经典的算法和数据结构。推荐《计算机程序设计艺术》、《算法导论》和《编程珠玑》。学习（麻省理工免费课程）计算机科学和编程导论学习（麻省理工免费课程）C语言内存管理学习Unix/Linux系统调用（Unix高级环境编程），，了解系统层面的东西。用这些系统知识操作一下文件系统，用户（实现一个可以拷贝目录树的小程序）用fork/wait/waitpid写一个多进程的程序，用pthread写一个多线程带同步或互斥的程序。多进程多进程购票的程序。用signal/kill/raise/alarm/pause/sigprocmask实现一个多进程间的信号量通信的程序。学会使用gcc和gdb来编程和调试程序（参看我的《用gdb调试程序》）学会使用makefile来编译程序。（参看我的《跟我一起写makefile》）IPC和Socket的东西可以放到高级中来实践。学习Windows SDK编程（Windows 程序设计 ，MFC程序设计）写一个窗口，了解WinMain/WinProcedure，以及Windows的消息机制。写一些程序来操作Windows SDK中的资源文件或是各种图形控件，以及作图的编程。学习如何使用MSDN查看相关的SDK函数，各种WM_消息以及一些例程。这本书中有很多例程，在实践中请不要照抄，试着自己写一个自己的例程。不用太多于精通这些东西，因为GUI正在被Web取代，主要是了解一下Windows 图形界面的编程。@virushuo 说：“ 我觉得GUI确实不那么热门了，但充分理解GUI工作原理是很重要的。包括移动设备开发，如果没有基础知识仍然很吃力。或者说移动设备开发必须理解GUI工作，或者在win那边学，或者在mac/iOS上学”。</p>
-<h3 id="2、学习Java"><a href="#2、学习Java" class="headerlink" title="2、学习Java"></a>2、学习Java</h3><p>Java 的学习主要是看经典的Core Java 《Java 核心技术编程》和《Java编程思想》（有两卷，我仅链了第一卷，足够了，因为Java的图形界面了解就可以了）学习JDK，学会查阅Java API Doc <a href="http://download.oracle.com/javase/6/docs/api/了解一下Java这种虚拟机语言和C和Python语言在编译和执行上的差别。从C、Java、Python思考一下“跨平台”这种技术。学会使用IDE" target="_blank" rel="noopener">http://download.oracle.com/javase/6/docs/api/了解一下Java这种虚拟机语言和C和Python语言在编译和执行上的差别。从C、Java、Python思考一下“跨平台”这种技术。学会使用IDE</a> Eclipse，使用Eclipse 编译，调试和开发Java程序。建一个Tomcat的网站，尝试一下JSP/Servlet/JDBC/MySQL的Web开发。把前面所说的那个PHP的小项目试着用JSP和Servlet实现一下。</p>
-<h3 id="3、Web的安全与架构"><a href="#3、Web的安全与架构" class="headerlink" title="3、Web的安全与架构"></a>3、Web的安全与架构</h3><p>学习HTML5，网上有很多很多教程，以前酷壳也介绍过很多，我在这里就不罗列了。学习Web开发的安全问题（参考新浪微博被攻击的这个事，以及Ruby的这篇文章）学习HTTP Server的rewrite机制，Nginx的反向代理机制，fast-cgi（如：PHP-FPM）学习Web的静态页面缓存技术。学习Web的异步工作流处理，数据Cache，数据分区，负载均衡，水平扩展的构架。实践任务：使用HTML5的canvas 制作一些Web动画。尝试在前面开发过的那个Web应用中进行SQL注入，JS注入，以及XSS攻击。把前面开发过的那个Web应用改成构造在Nginx + PHP-FPM + 静态页面缓存的网站</p>
-<h3 id="4、学习关系型数据库"><a href="#4、学习关系型数据库" class="headerlink" title="4、学习关系型数据库"></a>4、学习关系型数据库</h3><p>你可以安装MSSQLServer或MySQL来学习数据库。学习教科书里数据库设计的那几个范式，1NF，2NF，3NF，……学习数据库的存过，触发器，视图，建索引，游标等。学习SQL语句，明白表连接的各种概念（参看《SQL Join的图示》）学习如何优化数据库查询（参看《MySQL的优化》）实践任务：设计一个论坛的数据库，至少满足3NF，使用SQL语句查询本周，本月的最新文章，评论最多的文章，最活跃用户。</p>
-<h3 id="5、一些开发工具"><a href="#5、一些开发工具" class="headerlink" title="5、一些开发工具"></a>5、一些开发工具</h3><p>学会使用SVN或Git来管理程序版本。学会使用JUnit来对Java进行单元测试。学习C语言和Java语言的coding standard 或 coding guideline。（我N年前写过一篇关C语言非常简单的文章——《编程修养》，这样的东西你可以上网查一下，一大堆）。推荐阅读《代码大全》《重构》《代码整洁之道》</p>
-<h2 id="高级深入"><a href="#高级深入" class="headerlink" title="高级深入"></a>高级深入</h2><h3 id="1、C-Java-和面向对象"><a href="#1、C-Java-和面向对象" class="headerlink" title="1、C++ / Java 和面向对象"></a>1、C++ / Java 和面向对象</h3><p>我个人以为学好C++，Java也就是举手之劳。但是C++的学习曲线相当的陡。不过，我觉得C++是最需要学好的语言了。参看两篇趣文“C++学习信心图” 和“21天学好C++”<br>学习（麻省理工免费课程）C++面向对象编程读我的 “如何学好C++”中所推荐的那些书至少两遍以上（如果你对C++的理解能够深入到像我所写的《C++虚函数表解析》或是《C++对象内存存局（上）（下）》，或是《C/C++返回内部静态成员的陷阱》那就非常不错了）然后反思为什么C++要干成这样，Java则不是？你一定要学会对比C++和Java的不同。比如，Java中的初始化，垃圾回收，接口，异常，虚函数，等等。实践任务：用C++实现一个BigInt，支持128位的整形的加减乘除的操作。用C++封装一个数据结构的容量，比如hash table。用C++封装并实现一个智能指针（一定要使用模板）。《设计模式》必需一读，两遍以上，思考一下，这23个模式的应用场景。主要是两点：1）钟爱组合而不是继承，2）钟爱接口而不是实现。（也推荐《深入浅出设计模式》）实践任务：使用工厂模式实现一个内存池。使用策略模式制做一个类其可以把文本文件进行左对齐，右对齐和中对齐。使用命令模式实现一个命令行计算器，并支持undo和redo。使用修饰模式实现一个酒店的房间价格订价策略——旺季，服务，VIP、旅行团、等影响价格的因素。学习STL的用法和其设计概念 - 容器，算法，迭代器，函数子。如果可能，请读一下其源码。实践任务：尝试使用面向对象、STL，设计模式、和WindowsSDK图形编程的各种技能做一个贪吃蛇或是俄罗斯方块的游戏。支持不同的级别和难度。做一个文件浏览器，可以浏览目录下的文件，并可以对不同的文件有不同的操作，文本文件可以打开编辑，执行文件则执行之，mp3或avi文件可以播放，图片文件可以展示图片。学习C++的一些类库的设计，如： MFC（看看候捷老师的《深入浅出MFC》） ，Boost, ACE, CPPUnit，STL （STL可能会太难了，但是如果你能了解其中的设计模式和设计那就太好了，如果你能深入到我写的《STL string类的写时拷贝技术》那就非常不错了，ACE需要很强在的系统知识，参见后面的“加强对系统的了解”）Java是真正的面向对象的语言，Java的设计模式多得不能再多，也是用来学习面向对象的设计模式的最佳语言了（参看Java中的设计模式）。推荐阅读《Effective Java》 and 《Java解惑》学习Java的框架，Java的框架也是多，如Spring, Hibernate，Struts 等等，主要是学习Java的设计，如IoC等。Java的技术也是烂多，重点学习J2EE架构以及JMS， RMI, 等消息传递和远程调用的技术。学习使用Java做Web Service （官方教程在这里）实践任务： 尝试在Spring或Hibernate框架下构建一个有网络的Web Service的远程调用程序，并可以在两个Service中通过JMS传递消息。<br>C++和Java都不是能在短时间内能学好的，C++玩是的深，Java玩的是广，我建议两者选一个。我个人的学习经历是：<br>深究C++（我深究C/C++了十来年了）学习Java的各种设计模式。</p>
-<h3 id="2、加强系统了解"><a href="#2、加强系统了解" class="headerlink" title="2、加强系统了解"></a>2、加强系统了解</h3><p>重要阅读下面的几本书：<br>《Unix编程艺术》了解Unix系统领域中的设计和开发哲学、思想文化体系、原则与经验。你一定会有一种醍醐灌顶的感觉。《Unix网络编程卷1，套接字》这是一本看完你就明白网络编程的书。重要注意TCP、UDP，以及多路复用的系统调用select/poll/epoll的差别。《TCP/IP详解 卷1:协议》- 这是一本看完后你就可以当网络黑客的书。了解以太网的的运作原理，了解TCP/IP的协议，运作原理以及如何TCP的调优。实践任务：理解什么是阻塞（同步IO），非阻塞（异步IO），多路复用（select, poll, epoll）的IO技术。写一个网络聊天程序，有聊天服务器和多个聊天客户端（服务端用UDP对部分或所有的的聊天客户端进Multicast或Broadcast）。写一个简易的HTTP服务器。《Unix网络编程卷2，进程间通信》信号量，管道，共享内存，消息等各种IPC…… 这些技术好像有点老掉牙了，不过还是值得了解。实践任务：主要实践各种IPC进程序通信的方法。尝试写一个管道程序，父子进程通过管道交换数据。尝试写一个共享内存的程序，两个进程通过共享内存交换一个C的结构体数组。学习《Windows核心编程》一书。把CreateProcess，Windows线程、线程调度、线程同步（Event, 信号量，互斥量）、异步I/O，内存管理，DLL，这几大块搞精通。实践任务：使用CreateProcess启动一个记事本或IE，并监控该程序的运行。把前面写过的那个简易的HTTP服务用线程池实现一下。写一个DLL的钩子程序监控指定窗口的关闭事件，或是记录某个窗口的按键。有了多线程、多进程通信，TCP/IP，套接字，C++和设计模式的基本，你可以研究一下ACE了。使用ACE重写上述的聊天程序和HTTP服务器（带线程池）实践任务：通过以上的所有知识，尝试写一个服务端给客户端传大文件，要求把100M的带宽用到80%以上。（注意，磁盘I/O和网络I/O可能会很有问题，想一想怎么解决，另外，请注意网络传输最大单元MTU）了解BT下载的工作原理，用多进程的方式模拟BT下载的原理。</p>
-<h3 id="3、系统架构"><a href="#3、系统架构" class="headerlink" title="3、系统架构"></a>3、系统架构</h3><p>负载均衡。HASH式的，纯动态式的。（可以到Google学术里搜一些关于负载均衡的文章读读）多层分布式系统 – 客户端服务结点层、计算结点层、数据cache层，数据层。J2EE是经典的多层结构。CDN系统 – 就近访问，内容边缘化。P2P式系统，研究一下BT和电驴的算法。比如：DHT算法。服务器备份，双机备份系统（Live-Standby和Live-Live系统），两台机器如何通过心跳监测对方？集群主结点备份。虚拟化技术，使用这个技术，可以把操作系统当应用程序一下切换或重新配置和部署。学习Thrift，二进制的高性能的通讯中间件，支持数据(对象)序列化和多种类型的RPC服务。学习Hadoop。Hadoop框架中最核心的设计就是：MapReduce和HDFS。MapReduce的思想是由Google的一篇论文所提及而被广为流传的，简单的一句话解释MapReduce就是“任务的分解与结果的汇总”。HDFS是Hadoop分布式文件系统（Hadoop Distributed File System）的缩写，为分布式计算存储提供了底层支持。了解NoSQL数据库（有人说可能是一个过渡炒作的技术），不过因为超大规模以及高并发的纯动态型网站日渐成为主流，而SNS类网站在数据存取过程中有着实时性等刚性需求，这使得目前NoSQL数据库慢慢成了人们所关注的焦点，并大有成为取代关系型数据库而成为未来主流数据存储模式的趋势。当前NoSQL数据库很多，大部分都是开源的，其中比较知名的有：MemcacheDB、Redis、Tokyo Cabinet(升级版为Kyoto Cabinet)、Flare、MongoDB、CouchDB、Cassandra、Voldemort等。</p>
-<p>写了那么多，回顾一下，觉得自己相当的有成就感。希望大家不要吓着，我自己这十来年也在不断地学习，今天我也在学习中，人生本来就是一个不断学习和练级的过程。不过，一定有漏的，也有不对的，还希望大家补充和更正。（我会根据大家的反馈随时更新此文）欢迎大家通过我的微博（@zzwqzj）和我交流。<br>—– 更新 2011/07/19 —–<br>1）有朋友奇怪为什么我在这篇文章开头说了web+移动，却没有在后面提到iOS/Android的前端开发。因为我心里有一种感觉，移动设备上的UI最终也会被Javascript取代。大家可以用iPhone或Android看看google+，你就会明白了。<br>2）有朋友说我这里的东西太多了，不能为了学习而学习，我非常同意。我在文章的前面也说了要思考。另外，千万不要以为我说的这些东西是一些新的技术，这份攻略里95%以上的全是基础。而且都是久经考验的基础技术。即是可以让你一通百通的技术，也是可以让你找到一份不错工作的技术。<br>3）有朋友说学这些东西学完都40了，还不如想想怎么去挣钱。我想告诉大家，一是我今年还没有40岁，二是学无止境啊，三是我不觉得挣钱有多难，难的是怎么让你值那么多钱？无论是打工还是创业，是什么东西让你自己的价值，让你公司的价值更值钱？别的地方我不敢说，对于互联网或IT公司来说，技术实力绝对是其中之一。</p>
-<h3 id="转载出处已无法找到，若侵权请联系本人删除。"><a href="#转载出处已无法找到，若侵权请联系本人删除。" class="headerlink" title="转载出处已无法找到，若侵权请联系本人删除。"></a>转载出处已无法找到，若侵权请联系本人删除。</h3>
-          
+          前言你是否觉得自己从学校毕业的时候只做过小玩具一样的程序？走入职场后哪怕没有什么经验也可以把以下这些课外练习走一遍（朋友的抱怨：学校课程总是从理论出发，作业项目都看不出有什么实际作用，不如从工作中的需求出发）
+建议不要乱买书，不要乱追新技术新名词，基础的东西经过很长时间积累而且还会在未来至少10年通
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/23/学习路径/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -673,21 +664,18 @@
       
         
           
-            <p>「不就加个按钮么？怎么要做三四天？」类似的外行问话，经常在网上能看到。有程序员在 Quora 提问，该如何向外行解释自己工作的复杂度。</p>
-<p>下面是 Channing Walton 的用泡茶的例子来解释，非常形象。</p>
-<p>请他们描述泡出一杯茶需要哪些步骤，他们会这么说：</p>
-<p>烧水<br>把茶叶放到茶壶里<br>水烧开后倒入茶壶<br>等待5分钟<br>把茶倒进杯子<br>加牛奶<br>喝</p>
-<p>现在，有趣的开始了。你要开始问这样的问题:</p>
-<p>烧水?</p>
-<p>水哪来的？<br>热水壶在哪里？<br>你怎么把水倒进热水壶？<br>你怎么知道热水壶壶里要倒多少水？<br>如果没有水/热水壶/电怎么办呢?<br>假如加水传感器失效怎么办?<br>假如煮水传感器失效怎么办？</p>
-<p>茶叶放到茶壶里?</p>
-<p>茶壶在哪里，如果没有茶壶怎么办？烧水之前我们应该考虑到这些问题吗?<br>茶叶在哪里，要用哪一种茶叶？我们是否应该先问清楚，或许如果没有对应的茶叶，我们甚至都不应该开始泡茶?<br>关于加水和传感器也可以有类似的问题要问</p>
-<p>倒开水?</p>
-<p>你确定水已经开了么？你怎么能确保“倒水”的机器从热水壶那收到“烧水完成”的信号呢?<br>你如何确保倒水的机器知道热水壶在哪里?<br>如果热水壶在倒水的过程翻了怎么办呢?<br>等等</p>
-<p>诸如此类——这样的问题你可以问几个小时。他们会厌烦说，“问到这么细节真是太蠢了”，你但可一笑“的确很蠢”。</p>
-<p>ps. 最后，告诉他们，客户其实真正想要的是浓缩咖啡而不是日本茶道——当然，你肯定知道了，这不是显而易见的需求吗?</p>
-
-          
+          「不就加个按钮么？怎么要做三四天？」类似的外行问话，经常在网上能看到。有程序员在 Quora 提问，该如何向外行解释自己工作的复杂度。
+下面是 Channing Walton 的用泡茶的例子来解释，非常形象。
+请他们描述泡出一杯茶需要哪些步骤，他们会这么说：
+烧水把茶叶放到茶壶里水烧开后倒入茶壶等待
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/23/神解释/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -827,17 +815,17 @@
       
         
           
-            <p>/bin/sh^M:bad interpreter: No such file or directory<br>这个错误发生在你在windows下编写文件上传到linux服务器去运行的时候。</p>
-<p>错误原因：windows和linux的文件换行符不一样，Windows的换行符是CRLF而Linux的是LF。</p>
-<p>CR: \r<br>LF: \n</p>
-<p>解决办法:</p>
-<p>第一种：<br>Linux下 vi该文件 在命令模式下输入 :set ff=unix 回车</p>
-<p>例如 a.sh<br>vi a.sh<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:set ff=unix</span><br></pre></td></tr></table></figure></p>
-<p>第二种：<br>Windows使用vscode或其他可以转换CRLF到LF的编辑器，手动点击转换为Linux格式</p>
-<p>第三种：<br>如果是整个项目都需要这样转换，可以使用git仓库进行转换。<br>在Windows以LF提交到git仓库，再使用Linux clone下来就OK了。</p>
-<p>再次执行就不会有这样的问题了。</p>
-
-          
+          /bin/sh^M:bad interpreter: No such file or directory这个错误发生在你在windows下编写文件上传到linux服务器去运行的时候。
+错误原因：windows和linux的文件换行符不一样，Windows的换行符是CRLF而Linux的是LF。
+CR
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/23/CRLF转LF/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -977,49 +965,18 @@
       
         
           
-            <p>最近在做QEMU接口的时候，遇到一个中文乱码问题。<br>在读取网卡名字的时候，中文显示为锟斤拷are。</p>
-<p>可能也是自己对于C语言不是很熟悉，没有做过什么拿得出手的东西。</p>
-<p>现象：<br>Linux 在调用的时候使用UTF-8读会乱码，用GBK读会出现锟斤拷。<br>Windows 端也显示乱码。</p>
-<p>初步判断：<br>Windows 端查询的内容在转换的时候转换失败或丢失了。</p>
-<p>紧接着就去查询转换的地方，发现C语言有宽字节和多字节。</p>
-<p>WideCharToMultiByte 函数调用。给指针分配内存空间的时候，少分配了一半的内存，改好之后，Windows一切正常。</p>
-<p>此时满心欢喜的用Linux端调用尝试，本以为大功告成。</p>
-<p>结果锟斤拷变成了双持的。。。锟斤拷太锟斤拷 （以太网）</p>
-<p>有诗云：<br>手持两把锟斤拷，口中疾呼烫烫烫。<br>脚踏千朵屯屯屯，笑看万物锘锘锘。</p>
-<p>在现在这个时候能遇到如此神器已经是很难得了，所以又进行了下一步的研究。</p>
-<p>查询的时候查询到的是宽字节，也就是Unicode。但是在Linux终端xshell编码UTF-8接收的是几个问号，GBK接收的是锟斤拷。</p>
-<p>所以这里面一定有问题。</p>
-<p>然后就想，能不能把查出来的GBK，转成UTF-8乱码传出来，Linux读取之后再转回GBK。</p>
-<p>尝试一番，发现没读出来，可能是代码写的有问题。</p>
-<p>于是就转换了思路，为什么要转换成GBK而不是直接转换成UTF-8呢。</p>
-<p>查阅了<a href="https://docs.microsoft.com/en-us/windows/desktop/api/stringapiset/nf-stringapiset-widechartomultibyte" target="_blank" rel="noopener">官方文档</a></p>
-<p>发现，在WideCharToMultiByte 转换格式的时候可以指定Windows的ANSI和UTF-8。原来是之前的人写的代码有问题，没有考虑跨平台兼容性。</p>
-<p>于是进行了转码，将Unicode直接转换为UTF-8。</p>
-<p>再次使用Linux终端编码UTF-8接收，一切正常。</p>
-<p>至此已经过去了一周的时间。</p>
-<p>由于是上层平台需要使用此值，所以使用python代码接收，但是python2的代码中默认编码是ASCII，所以：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import sys</span><br><span class="line">reload(sys) #这一句是因为python2.5以后不支持setdefaultencoding方法，需要重新载入模块才可以使用</span><br><span class="line">sys.setdefaultencoding(&quot;utf-8&quot;)</span><br></pre></td></tr></table></figure>
-<p>但是使用了utf-8发现还是有问题。</p>
-<p>发现向Java代码传递后值为\uXXXX类的值，这不是Unicode的编码吗。为什么不是中文？</p>
-<p>于是看了一下接收的地方代码，接收的json数据，但使用eval去转换str类型变成dict。</p>
-<p>在查阅了一番资料后，得知一个结论： 不要使用eval，eval会直接进行转换，而且之前听说eval是一个不安全的操作，所以尽量使用json包去转换类型。</p>
-<p>改为json转换类型，发现结果还是不对，但是执行print去打印此值就是正确的值。</p>
-<p>此时判断，从python到Java之间的转换层出了问题，于是一点点排查坑。</p>
-<p>最终发现在一个不起眼的地方，在代码中间部分被引入了json包，而没有在头中引入。</p>
-<p>前人挖坑，后人遭罪啊。。。</p>
-<p>于是检查json转换逻辑，发现json.dumps 序列化时对中文默认使用的ascii编码。</p>
-<p>想输出真正的中文需要指定ensure_ascii=False。</p>
-<p>测试后一切正常。</p>
-<p>又过去了一周的时间。。。。</p>
-<p>两周的时间对于开发来讲时间挺长的，但是经历过这个坑，下一个坑就容易多了。</p>
-<p>总结的经验：</p>
-<p>在解决问题的时候，尽量去溯源，不要在中间过程中下太多功夫，一般都是代码出口或者入口上出问题的几率比较大。</p>
-<p>这次就是钻了牛角尖，妄想着在Linux和Windows通信的时候把编码转换正常，浪费了这么多时间。</p>
-<p>呼吁大家编码的时候遵循编码规范。</p>
-<p>建议参考的编码格式：</p>
-<p>Java：阿里巴巴Java开发手册<br>Python：PEP8规范/Google代码规范<br>C：Google代码规范</p>
-
-          
+          最近在做QEMU接口的时候，遇到一个中文乱码问题。在读取网卡名字的时候，中文显示为锟斤拷are。
+可能也是自己对于C语言不是很熟悉，没有做过什么拿得出手的东西。
+现象：Linux 在调用的时候使用UTF-8读会乱码，用GBK读会出现锟斤拷。Windows 端也显示乱码。
+初步判断：Windows 端
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/16/跨平台C语言编码/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1159,13 +1116,18 @@
       
         
           
-            <p>首先确定你的Linux内核版本大于4.9<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uname -r</span><br></pre></td></tr></table></figure></p>
-<p>执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsmod | grep bbr</span><br></pre></td></tr></table></figure></p>
-<p>如果结果中没有 tcp_bbr 的话就先执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">modprobe tcp_bbr</span><br><span class="line">echo &quot;tcp_bbr&quot; &gt;&gt; /etc/modules-load.d/modules.conf</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;net.core.default_qdisc=fq&quot; &gt;&gt; /etc/sysctl.conf</span><br><span class="line">echo &quot;net.ipv4.tcp_congestion_control=bbr&quot; &gt;&gt; /etc/sysctl.conf</span><br><span class="line"></span><br><span class="line">sysctl -p</span><br><span class="line"></span><br><span class="line">sysctl net.ipv4.tcp_available_congestion_control</span><br><span class="line">sysctl net.ipv4.tcp_congestion_control</span><br></pre></td></tr></table></figure>
-
-          
+          首先确定你的Linux内核版本大于4.91uname -r
+执行1lsmod | grep bbr
+如果结果中没有 tcp_bbr 的话就先执行
+12modprobe tcp_bbrecho &quot;tcp_bbr&quot; &gt;&gt; /etc/modules-load.d/modul
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/15/开启bbr服务/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1305,14 +1267,17 @@
       
         
           
-            <p><a href="https://www.google.com" target="_blank" rel="noopener">谷歌:搜索引擎</a><br>使用方式：使用关键字搜索你想要的内容，全球最强大的搜索引擎</p>
-<p><a href="https://www.github.com" target="_blank" rel="noopener">GitHub:代码托管</a><br>使用方式：通过查询别人的issues解决在使用开源项目中无法解决的问题，fork项目clone源码看开源项目，学习项目思想</p>
-<p><a href="https://www.stackoverflow.com" target="_blank" rel="noopener">StackOverFlow:问答社区</a><br>使用方式：在遇到上面两种方式无法解决的问题，可以在社区提问，或搜索社区已有的问答</p>
-<p><a href="https://www.bilibili.com" target="_blank" rel="noopener">bilibili:国内教程</a><br>使用方式：youtube上优质教程会被搬运到这里，可以搜索你想看的视频课程</p>
-<p><a href="https://www.youtube.com" target="_blank" rel="noopener">youtube:国外教程</a><br>使用方式：可以看全世界的优质课程，但基本上只有英文版，可以转换中文字幕观看</p>
-<p>相信使用了以上的站点，会使代码水平更进一步</p>
-
-          
+          谷歌:搜索引擎使用方式：使用关键字搜索你想要的内容，全球最强大的搜索引擎
+GitHub:代码托管使用方式：通过查询别人的issues解决在使用开源项目中无法解决的问题，fork项目clone源码看开源项目，学习项目思想
+StackOverFlow:问答社区使用方式：在遇到上面两种方式无法解决的问题，
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/08/14/常用站点/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
