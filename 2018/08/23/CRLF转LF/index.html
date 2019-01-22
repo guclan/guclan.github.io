@@ -83,10 +83,10 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="&#x2F;bin&#x2F;sh^M:bad interpreter">
 <meta property="og:url" content="https://blog.guclan.com/2018/08/23/CRLF转LF/index.html">
-<meta property="og:site_name" content="梦天小站">
+<meta property="og:site_name" content="古族少年">
 <meta property="og:description" content="/bin/sh^M:bad interpreter: No such file or directory这个错误发生在你在windows下编写文件上传到linux服务器去运行的时候。 错误原因：windows和linux的文件换行符不一样，Windows的换行符是CRLF而Linux的是LF。 CR: \rLF: \n 解决办法: 第一种：Linux下 vi该文件 在命令模式下输入 :set ff">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-21T02:57:15.514Z">
+<meta property="og:updated_time" content="2019-01-22T02:31:49.639Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="&#x2F;bin&#x2F;sh^M:bad interpreter">
 <meta name="twitter:description" content="/bin/sh^M:bad interpreter: No such file or directory这个错误发生在你在windows下编写文件上传到linux服务器去运行的时候。 错误原因：windows和linux的文件换行符不一样，Windows的换行符是CRLF而Linux的是LF。 CR: \rLF: \n 解决办法: 第一种：Linux下 vi该文件 在命令模式下输入 :set ff">
@@ -125,7 +125,7 @@
 
 
 
-  <title>/bin/sh^M:bad interpreter | 梦天小站</title>
+  <title>/bin/sh^M:bad interpreter | 古族少年</title>
   
 
 
@@ -165,7 +165,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">梦天小站</span>
+        <span class="site-title">古族少年</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -275,13 +275,13 @@
     <link itemprop="mainEntityOfPage" href="https://blog.guclan.com/2018/08/23/CRLF转LF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="梦天">
+      <meta itemprop="name" content="ASpiral丶">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="梦天小站">
+      <meta itemprop="name" content="古族少年">
     </span>
 
     
@@ -317,8 +317,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-12-21T10:57:15+08:00">
-                2018-12-21
+              <time title="更新于" itemprop="dateModified" datetime="2019-01-22T10:31:49+08:00">
+                2019-01-22
               </time>
             
           </span>
@@ -381,6 +381,7 @@
 <p>例如 a.sh<br>vi a.sh<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:set ff=unix</span><br></pre></td></tr></table></figure></p>
 <p>第二种：<br>Windows使用vscode或其他可以转换CRLF到LF的编辑器，手动点击转换为Linux格式</p>
 <p>第三种：<br>如果是整个项目都需要这样转换，可以使用git仓库进行转换。<br>在Windows以LF提交到git仓库，再使用Linux clone下来就OK了。</p>
+<p>如果上述都无法使用，可以使用第四种：<br>vi a.sh<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:%s/\r//g</span><br></pre></td></tr></table></figure></p>
 <p>再次执行就不会有这样的问题了。</p>
 
       
@@ -475,7 +476,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">梦天</p>
+              <p class="site-author-name" itemprop="name">ASpiral丶</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
@@ -528,7 +529,7 @@
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="mailto:ment@guclan.com" target="_blank" title="E-Mail">
+                    <a href="mailto:aspiral@guclan.com" target="_blank" title="E-Mail">
                       
                         <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   </span>
@@ -561,11 +562,11 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">梦天</span>
+  <span class="author" itemprop="copyrightHolder">ASpiral丶</span>
 
   
 </div>
